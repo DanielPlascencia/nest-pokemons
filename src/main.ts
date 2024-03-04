@@ -5,7 +5,7 @@ import { ValidationPipe } from '@nestjs/common';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  app.setGlobalPrefix('api/v2'); // Funciona para poner un prefijo global en la aplicación. Ejemplo: /'api'/las-demas-rutas
+  // app.setGlobalPrefix('api/v2'); // Funciona para poner un prefijo global en la aplicación. Ejemplo: /'api'/las-demas-rutas
 
   app.useGlobalPipes(
     new ValidationPipe({
